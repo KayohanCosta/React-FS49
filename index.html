@@ -2,15 +2,24 @@
 <html lang="pt-BR">
 
 <head>
+<<<<<<< HEAD
   <meta name="autor" content="Kayohan Costa">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Introdução ao React</title>
+=======
+    <meta name="autor" content="Kayohan Costa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Introdução ao React</title>
+>>>>>>> 9ef30163e4c9bd72155757cf46c5c5f132b603a2
 </head>
 
 <body>
 
+<<<<<<< HEAD
   <main id="container"></main>
 
   <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
@@ -24,38 +33,73 @@
         <div className="input">
           <input className="user" type="text" placeholder="Usuário" />
           <input className="senha" type="text" placeholder="Senha" />
+=======
+    <main id="container"></main>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        
+        function Login() {
+      return (
+        <div className="input">
+          <input className="user" type="text" placeholder="Usuário"/>
+          <input className="senha" type="text" placeholder="Senha"/>
+>>>>>>> 9ef30163e4c9bd72155757cf46c5c5f132b603a2
         </div>
       )
     };
 
     function Checkbox() {
       return (
+<<<<<<< HEAD
         <div className="checkbox">
           <input className="checkbox-input" type="checkbox" name="mostrar-senha" id="mostrar-senha" />
           <label className="checkbox-label" for="mostrar-senha">Mostrar Senha</label>
+=======
+        <div>
+          <input type="checkbox" name="mostrar-senha" id="mostrar-senha"/>
+          <label>Mostrar Senha</label>
+>>>>>>> 9ef30163e4c9bd72155757cf46c5c5f132b603a2
         </div>
-      )
+      )     
     };
 
     function Button() {
       return (
+<<<<<<< HEAD
         <div className="button">
+=======
+        <div>
+>>>>>>> 9ef30163e4c9bd72155757cf46c5c5f132b603a2
           <button>Entrar</button>
         </div>
       )
     };
+<<<<<<< HEAD
 
     function Span() {
       return (
         <div className="span">
           <span className="span-text">Esqueceu Senha? Recupere aqui. <a href="http://">aqui</a></span>
           <span className="span-text">Não possui cadastro? Cadastre-se aqui. <a href="http://">aqui</a></span>
+=======
+    
+    function Span() {
+      return (
+        <div>
+          <span>Esqueceu Senha? Recupere aqui. <a href="http://">aqui</a></span>
+          <span>Não possui cadastro? Cadastre-se aqui. <a href="http://">aqui</a></span>
+>>>>>>> 9ef30163e4c9bd72155757cf46c5c5f132b603a2
         </div>
       )
     };
 
     const App = (
       <>
+<<<<<<< HEAD
         <Login />
         <Checkbox />
         <Button />
@@ -70,6 +114,24 @@
 
 
   </script>
+=======
+        <Login/>
+        <Checkbox/>
+        <Button/>
+        <Span/>
+      </>
+    );
+
+
+
+        const container = document.querySelector('#container');
+
+        const root = ReactDOM.createRoot(container);
+        root.render(App);
+
+
+    </script>
+>>>>>>> 9ef30163e4c9bd72155757cf46c5c5f132b603a2
 </body>
 
 </html>
