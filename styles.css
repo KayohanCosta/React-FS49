@@ -1,0 +1,91 @@
+ html,
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #f4f4f4;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     height: 100%;
+ }
+
+ input {
+     display: block;
+     margin-bottom: 10px;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+
+ input.user,
+ input.senha {
+     width: 300px;
+ }
+.checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 40px; 
+}
+
+.checkbox-input {
+    margin-right: 10px;
+    margin-bottom: 2px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-self: center; 
+}
+
+.checkbox-label {
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+    line-height: 20px;
+    align-self: center;
+}
+
+ .button {
+     margin-bottom: 15px;
+ }
+
+ .button button {
+     width: 100%;
+     padding: 10px;
+     background-color: #032183;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     font-size: 16px;
+ }
+
+ .button button:hover {
+     background-color: #1b76dd;
+ }
+
+ .span {
+     margin-bottom: 10px;
+ }
+
+ .span-text {
+     display: block;
+     margin-bottom: 5px;
+     font-size: 14px;
+ }
+
+ .span-text a {
+     color: #007bff;
+     text-decoration: none;
+ }
+
+ .span-text a:hover {
+     text-decoration: underline;
+ }
