@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta name="autor" content="Kayohan Costa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Introdução ao React</title>
+</head>
+
+<body>
+
+    <main id="container"></main>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        
+        function Login() {
+      return (
+        <div className="input">
+          <input className="user" type="text" placeholder="Usuário"/>
+          <input className="senha" type="text" placeholder="Senha"/>
+        </div>
+      )
+    };
+
+    function Checkbox() {
+      return (
+        <div>
+          <input type="checkbox" name="mostrar-senha" id="mostrar-senha"/>
+          <label>Mostrar Senha</label>
+        </div>
+      )
+    };
+
+    function Button() {
+      return (
+        <div>
+          <button>Entrar</button>
+        </div>
+      )
+    };
+    
+    function Span() {
+      return (
+        <div>
+          <span>Esqueceu Senha? Recupere aqui. <a href="http://">aqui</a></span>
+          <span>Não possui cadastro? Cadastre-se aqui. <a href="http://">aqui</a></span>
+        </div>
+      )
+    };
+
+    const App = (
+      <>
+        <Login/>
+        <Checkbox/>
+        <Button/>
+        <Span/>
+      </>
+    );
+
+
+
+        const container = document.querySelector('#container');
+
+        const root = ReactDOM.createRoot(container);
+        root.render(App);
+
+
+    </script>
+</body>
+
+</html>
