@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta name="autor" content="Kayohan Costa">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+
+    <main id="container"></main>
+
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+
+        function Header() {
+            return (
+                <header>
+                    <h1>Cadastre-se</h1>
+                    <p>Por favor, insira suas credenciais para criar sua conta.</p>
+                </header>
+            )
+        };
+
+        function Logo() {
+            return (
+                <div className="logo">
+                    <img src="./assets/logo.png" alt="Logo" />
+                </div>
+            )
+        };
+
+        function Dados() {
+            return (
+                <div className="input">
+                    <input className="user" type="text" placeholder="Primeiro Nome" />
+                    <input className="sobrenome" type="text" placeholder="Sobrenome" />
+                    <input className="email" type="text" placeholder="Email" />
+                    <input className="telefone" type="text" placeholder="(85) 91234-7890" />
+                </div>
+            )
+        };
+
+
+        function Senha() {
+            return (
+                <div className="input senha-inputs" >
+                    <input className="senha" type="password" placeholder="Senha" />
+                    <input className="confirmar-senha" type="password" placeholder="Confirmar Senha" />
+                </div>
+            );
+        };
+
+        function Checkbox() {
+            return (
+            <div className="checkbox-gen">
+                <label className="checkbox-label" htmlFor="genero">Gênero</label>
+                <select className="seleciona-genero" name="genero" id="genero">
+                <option value="">Selecione</option>
+                <option value="feminino">Feminino</option>
+                <option value="masculino">Masculino</option>
+                <option value="outros">Outros</option>
+                <option value="prefiro-nao-dizer">Prefiro não dizer</option>
+                </select>
+            </div>
+            )
+        };
+
+
+        function Button() {
+            return (
+                <div className="button">
+                    <button>Criar Conta</button>
+                </div>
+            )
+        };
+
+        const App = (
+            <>
+                <Logo />
+                <Header />
+                <Dados />
+                <Senha />
+                <Checkbox />
+                <Button />
+
+            </>
+        );
+
+        const container = document.querySelector('#container');
+
+        const root = ReactDOM.createRoot(container);
+        root.render(App);
+    </script>
+
+</html>

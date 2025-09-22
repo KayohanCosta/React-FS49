@@ -22,35 +22,83 @@
  }
 
  input.user,
- input.senha {
-     width: 300px;
+ input.senha,
+ input.email,
+ input.sobrenome,
+ input.telefone {
+     width: 400px;
  }
-.checkbox {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    height: 40px; 
-}
 
-.checkbox-input {
-    margin-right: 10px;
-    margin-bottom: 2px;
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    align-self: center; 
-}
+ input.senha1 {
+     width: 400px;
+ }
 
-.checkbox-label {
-    font-size: 14px;
-    cursor: pointer;
-    user-select: none;
-    line-height: 20px;
-    align-self: center;
-}
+ .input.senha-inputs {
+     display: flex;
+     gap: 10px;
+ }
+
+ input.senha,
+ input.confirmar-senha {
+     width: 184px;
+ }
+
+ header {
+     text-align: start;
+     margin-bottom: 20px;
+ }
+
+ .logo img {
+     width: 150px;
+     height: auto;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+ .checkbox {
+     display: flex;
+     align-items: center;
+     margin-bottom: 15px;
+     height: 40px;
+ }
+
+ .checkbox-gen {
+     display: flex;
+     align-items: center;
+     margin-bottom: 15px;
+     gap: 10px;
+     height: 40px;
+ }
+
+ .seleciona-genero {
+     padding: auto;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     cursor: pointer;
+     height: 30px;
+ }
+
+ .checkbox-input {
+     margin-right: 10px;
+     margin-bottom: 2px;
+     width: 20px;
+     height: 20px;
+     cursor: pointer;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     align-self: center;
+ }
+
+ .checkbox-label {
+     font-size: 14px;
+     cursor: pointer;
+     user-select: none;
+     line-height: 20px;
+     align-self: center;
+ }
 
  .button {
      margin-bottom: 15px;
@@ -89,3 +137,57 @@
  .span-text a:hover {
      text-decoration: underline;
  }
+
+
+ .entrar-com {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.entrar-com-text {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-buttons button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.social-buttons button:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.facebook-button {
+  background-color: #1877F2;
+}
+
+.github-button {
+  background-color: #333;
+}
+
+.linkedin-button {
+  background-color: #0A66C2;
+}
+
+.google-button {
+  background-color: #DB4437;
+}
