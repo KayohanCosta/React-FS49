@@ -138,56 +138,87 @@
      text-decoration: underline;
  }
 
-
  .entrar-com {
-  text-align: center;
-  margin: 20px 0;
+     text-align: center;
+     margin: 20px 0;
+ }
+
+ .entrar-com-text {
+     display: block;
+     margin-bottom: 10px;
+     font-weight: bold;
+     color: #444;
+ }
+
+ .social-buttons {
+     display: flex;
+     justify-content: center;
+     gap: 12px;
+ }
+
+ .social-buttons button {
+     width: 48px;
+     height: 48px;
+     border: none;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     color: #fff;
+     font-size: 20px;
+     cursor: pointer;
+     transition: transform 0.2s, opacity 0.2s;
+ }
+
+ .social-buttons button:hover {
+     transform: scale(1.1);
+     opacity: 0.9;
+ }
+
+ .facebook-button {
+     background-color: #1877F2;
+ }
+
+ .github-button {
+     background-color: #333;
+ }
+
+ .linkedin-button {
+     background-color: #0A66C2;
+ }
+
+ .google-button {
+     background-color: #DB4437;
+ }
+
+ .Cancelar {
+     margin-top: 10px;
+     width: 400px;
+     text-align: center;
+ }
+
+.voltar {
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
 
-.entrar-com-text {
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #444;
+.voltar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #032183;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 22px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+    transition: background 0.2s, transform 0.2s;
 }
 
-.social-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-}
-
-.social-buttons button {
-  width: 48px;
-  height: 48px;
-  border: none;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  transition: transform 0.2s, opacity 0.2s;
-}
-
-.social-buttons button:hover {
-  transform: scale(1.1);
-  opacity: 0.9;
-}
-
-.facebook-button {
-  background-color: #1877F2;
-}
-
-.github-button {
-  background-color: #333;
-}
-
-.linkedin-button {
-  background-color: #0A66C2;
-}
-
-.google-button {
-  background-color: #DB4437;
+.voltar a:hover {
+    background-color: #1b76dd;
+    transform: scale(1.08);
 }
